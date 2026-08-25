@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_title">Electrical & Automation Engineer — Embedded, IIoT, BMS</title>
+  <meta name="description" content="Portfolio of an electrical and industrial automation engineer building embedded, IIoT, PLC and building automation systems that connect hardware with software.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header / Navbar -->
+    <header class="site-header" id="navbar">
+      <nav class="nav-container" aria-label="Main navigation">
+        <a href="#top" class="brand-logo">
+          <span class="led-wrapper">
+            <span class="led-dot"></span>
+          </span>
+          <span class="brand-name">A. FIRMAN</span>
+        </a>
+
+        <!-- Desktop Navigation Links & Language Switcher -->
+        <div class="nav-links-desktop">
+          <a href="#work" class="nav-link" data-i18n="nav_work">Work</a>
+          <a href="#expertise" class="nav-link" data-i18n="nav_expertise">Expertise</a>
+          <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+          <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+          
+          <!-- Language Switcher Desktop -->
+          <div class="lang-switch-wrapper" role="group" aria-label="Language selection">
+            <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
+            <span class="lang-divider">/</span>
+            <button type="button" class="lang-btn" data-lang="id" title="Bahasa Indonesia">ID</button>
+          </div>
+
+          <a href="#contact" class="btn-connect-nav" data-i18n="nav_connect">Let's Connect</a>
+        </div>
+
+        <!-- Mobile Controls (Language toggle + Hamburger) -->
+        <div class="mobile-header-controls">
+          <!-- Language Switcher for Mobile Header -->
+          <div class="lang-switch-wrapper lang-switch-mobile-header" role="group" aria-label="Language selection">
+            <button type="button" class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-divider">/</span>
+            <button type="button" class="lang-btn" data-lang="id">ID</button>
+          </div>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+            <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-nav-drawer" id="mobileNav">
+        <div class="mobile-nav-content">
+          <a href="#work" class="mobile-nav-link" data-i18n="nav_work">Work</a>
+          <a href="#expertise" class="mobile-nav-link" data-i18n="nav_expertise">Expertise</a>
+          <a href="#about" class="mobile-nav-link" data-i18n="nav_about">About</a>
+          <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
+          
+          <div class="mobile-drawer-lang">
+            <span class="label-mono" data-i18n="lang_label">Language:</span>
+            <div class="lang-switch-wrapper">
+              <button type="button" class="lang-btn active" data-lang="en">English (EN)</button>
+              <span class="lang-divider">|</span>
+              <button type="button" class="lang-btn" data-lang="id">Indonesia (ID)</button>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary mobile-btn-connect" data-i18n="nav_connect">Let's Connect</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="top" class="hero-section">
+        <div class="grid-bg hero-grid-bg"></div>
+        <div class="hero-bottom-fade"></div>
+        
+        <div class="container hero-container">
+          <div class="hero-content rise-animation">
+            <div class="system-status-badge">
+              <span class="led-dot"></span>
+              <span class="label-mono status-text" data-i18n="status_online">System online</span>
+              <span class="status-divider"></span>
+              <span class="label-mono" data-i18n="status_mode">Engineering mode: active</span>
+            </div>
+
+            <h1 class="hero-title" data-i18n-html="hero_title">
+              Engineering the connection between the <span class="text-primary text-glow">physical</span> and <span class="text-signal">digital</span> world.
+            </h1>
+
+            <p class="hero-description" data-i18n="hero_desc">
+              Electrical & industrial automation engineer building instrumented, connected systems — from sensor signal to control logic to dashboard.
+            </p>
+
+            <ul class="tag-list">
+              <li class="tag-item" data-i18n="tag_embedded">Embedded Systems</li>
+              <li class="tag-item" data-i18n="tag_iiot">Industrial IoT</li>
+              <li class="tag-item" data-i18n="tag_automation">Automation</li>
+              <li class="tag-item" data-i18n="tag_bacs">BACS / BMS</li>
+              <li class="tag-item" data-i18n="tag_plc">PLC</li>
+              <li class="tag-item" data-i18n="tag_control">Control Systems</li>
+            </ul>
+
+            <div class="hero-cta-group">
+              <a href="#work" class="btn-primary">
+                <span data-i18n="btn_view_projects">View Projects</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn-outline" data-i18n="btn_connect">
+                Let's Connect
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Circuit Schematic Graphic -->
+          <div class="hero-visual">
+            <div class="schematic-glow"></div>
+            <svg viewBox="0 0 420 320" role="img" aria-label="Abstract diagram of sensors feeding a microcontroller, edge network and building management system" class="schematic-svg">
+              <!-- Grid Matrix Lines -->
+              <g stroke="currentColor" class="schematic-grid" stroke-width="1">
+                <line x1="0" y1="0" x2="420" y2="0"></line>
+                <line x1="0" y1="45" x2="420" y2="45"></line>
+                <line x1="0" y1="90" x2="420" y2="90"></line>
+                <line x1="0" y1="135" x2="420" y2="135"></line>
+                <line x1="0" y1="180" x2="420" y2="180"></line>
+                <line x1="0" y1="225" x2="420" y2="225"></line>
+                <line x1="0" y1="270" x2="420" y2="270"></line>
+                <line x1="0" y1="315" x2="420" y2="315"></line>
+                <line x1="0" y1="0" x2="0" y2="320"></line>
+                <line x1="46" y1="0" x2="46" y2="320"></line>
+                <line x1="92" y1="0" x2="92" y2="320"></line>
+                <line x1="138" y1="0" x2="138" y2="320"></line>
+                <line x1="184" y1="0" x2="184" y2="320"></line>
+                <line x1="230" y1="0" x2="230" y2="320"></line>
+                <line x1="276" y1="0" x2="276" y2="320"></line>
+                <line x1="322" y1="0" x2="322" y2="320"></line>
+                <line x1="368" y1="0" x2="368" y2="320"></line>
+                <line x1="414" y1="0" x2="414" y2="320"></line>
+              </g>
+
+              <!-- Signal Connection Traces -->
+              <g fill="none" stroke-width="1.5" stroke-linecap="round">
+                <path d="M60 40 H150 Q170 40 170 60 V96" class="trace-primary-dim"></path>
+                <path d="M60 190 H150 Q170 190 170 165 V126" class="trace-primary-dim"></path>
+                <path d="M200 128 V244" class="trace-signal-dim"></path>
+                <path d="M226 260 H300 Q330 260 330 224 V196" class="trace-signal-dim"></path>
+                <path d="M340 164 V60 Q340 40 320 40 H250" class="trace-primary-faint"></path>
+
+                <!-- Flowing Animated Pulse Lines -->
+                <path d="M60 40 H150 Q170 40 170 60 V96" class="flow-trace stroke-primary"></path>
+                <path d="M200 128 V244" class="flow-trace stroke-signal"></path>
+                <path d="M226 260 H300 Q330 260 330 224 V196" class="flow-trace stroke-signal"></path>
+              </g>
+
+              <!-- Nodes with Pulsing Effect -->
+              <g>
+                <!-- SENSOR Node -->
+                <g>
+                  <circle cx="60" cy="40" r="7" class="pulse-node fill-primary" style="animation-delay: 0s; transform-origin: 60px 40px;"></circle>
+                  <circle cx="60" cy="40" r="14" class="node-ring" stroke-width="1" fill="none"></circle>
+                  <text x="82" y="44" class="schematic-label" data-i18n="sch_sensor">SENSOR</text>
+                </g>
+
+                <!-- ESP32 Node -->
+                <g>
+                  <circle cx="200" cy="110" r="7" class="pulse-node fill-primary" style="animation-delay: 0.4s; transform-origin: 200px 110px;"></circle>
+                  <circle cx="200" cy="110" r="14" class="node-ring" stroke-width="1" fill="none"></circle>
+                  <text x="222" y="114" class="schematic-label">ESP32</text>
+                </g>
+
+                <!-- RS-485 Node -->
+                <g>
+                  <circle cx="60" cy="190" r="7" class="pulse-node fill-primary" style="animation-delay: 0.8s; transform-origin: 60px 190px;"></circle>
+                  <circle cx="60" cy="190" r="14" class="node-ring" stroke-width="1" fill="none"></circle>
+                  <text x="82" y="194" class="schematic-label">RS-485</text>
+                </g>
+
+                <!-- EDGE Node -->
+                <g>
+                  <circle cx="200" cy="260" r="7" class="pulse-node fill-primary" style="animation-delay: 1.2s; transform-origin: 200px 260px;"></circle>
+                  <circle cx="200" cy="260" r="14" class="node-ring" stroke-width="1" fill="none"></circle>
+                  <text x="222" y="264" class="schematic-label">EDGE</text>
+                </g>
+
+                <!-- BMS Node -->
+                <g>
+                  <circle cx="340" cy="180" r="7" class="pulse-node fill-primary" style="animation-delay: 1.6s; transform-origin: 340px 180px;"></circle>
+                  <circle cx="340" cy="180" r="14" class="node-ring" stroke-width="1" fill="none"></circle>
+                  <text x="362" y="184" class="schematic-label">BMS</text>
+                </g>
+              </g>
+
+              <!-- Technical Telemetry Footer Text -->
+              <g class="schematic-meta" font-size="8" letter-spacing="1.4">
+                <text x="8" y="312">CH1 · 3.3V</text>
+                <text x="330" y="312">SR 1kHz</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 01: Engineering Identity -->
+      <section id="about" class="content-section section-bordered">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">01</span>
+            <span class="label-mono" data-i18n="sec1_tag">Engineering identity</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n-html="sec1_heading">
+            More than just <span class="text-primary">wires</span> and code.
+          </h2>
+
+          <p class="section-lead" data-i18n="sec1_lead">
+            I work at the intersection of electrical engineering, embedded systems, automation and software — where a measurement becomes a decision, and a decision becomes a physical action.
+          </p>
+
+          <div class="about-grid">
+            <div class="about-narrative">
+              <p data-i18n="sec1_p1">
+                My work starts at the panel: sensors, wiring, power and signal integrity. From there it moves into firmware, industrial communication, and finally into dashboards where operators actually make decisions.
+              </p>
+              <p data-i18n="sec1_p2">
+                I care about systems that stay reliable at 3 a.m. — deterministic control logic, honest telemetry, and interfaces that tell the truth about the plant.
+              </p>
+
+              <!-- Metrics Stats -->
+              <dl class="stats-grid">
+                <div class="stat-card">
+                  <dd class="stat-number">6+</dd>
+                  <dt class="label-mono stat-label" data-i18n="stat_domains">Domains</dt>
+                </div>
+                <div class="stat-card">
+                  <dd class="stat-number">8+</dd>
+                  <dt class="label-mono stat-label" data-i18n="stat_protocols">Protocols</dt>
+                </div>
+                <div class="stat-card">
+                  <dd class="stat-number">40+</dd>
+                  <dt class="label-mono stat-label" data-i18n="stat_nodes">Deployed nodes</dt>
+                </div>
+              </dl>
+            </div>
+
+            <!-- Identity Stack Diagram Box -->
+            <div class="identity-stack-card dot-bg">
+              <ol class="stack-list">
+                <li class="stack-item">
+                  <span class="label-mono stack-num">01</span>
+                  <span class="stack-title" data-i18n="stack_electrical">Electrical</span>
+                </li>
+                <li class="stack-item">
+                  <span class="label-mono stack-num">02</span>
+                  <span class="stack-title" data-i18n="stack_embedded">Embedded</span>
+                </li>
+                <li class="stack-item">
+                  <span class="label-mono stack-num">03</span>
+                  <span class="stack-title" data-i18n="stack_automation">Automation</span>
+                </li>
+                <li class="stack-item">
+                  <span class="label-mono stack-num">04</span>
+                  <span class="stack-title" data-i18n="stack_software">Software</span>
+                </li>
+              </ol>
+
+              <div class="stack-connector-line"></div>
+
+              <div class="intelligent-systems-badge">
+                <span class="led-dot"></span>
+                <span class="label-mono text-primary font-semibold" data-i18n="badge_intelligent">Intelligent systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 02: Capabilities / Expertise -->
+      <section id="expertise" class="content-section section-bordered">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">02</span>
+            <span class="label-mono" data-i18n="sec2_tag">Capabilities</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n="sec2_heading">What I build</h2>
+          <p class="section-lead" data-i18n="sec2_lead">Eight domains I work across — usually two or three at once inside the same cabinet.</p>
+
+          <div class="capabilities-grid">
+            <!-- 01 Embedded Systems -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">01</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path>
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="8" y="8" width="8" height="8" rx="1"></rect>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_1_title">Embedded Systems</h3>
+              <p class="capability-desc" data-i18n="cap_1_desc">ESP32 and microcontroller firmware, sensors, actuators, GPIO and low-level communication interfaces.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 02 Industrial IoT -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">02</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path>
+                  <path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path>
+                  <path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path>
+                  <path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_2_title">Industrial IoT</h3>
+              <p class="capability-desc" data-i18n="cap_2_desc">Telemetry pipelines, MQTT, edge computing, device connectivity and real-time monitoring.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 03 BACS / BMS -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">03</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 12h4"></path><path d="M10 8h4"></path>
+                  <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
+                  <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
+                  <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_3_title">BACS / BMS</h3>
+              <p class="capability-desc" data-i18n="cap_3_desc">Building automation, HVAC monitoring, energy management and centralized environmental control.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 04 Industrial Automation -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">04</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 10.27 7 3.34"></path><path d="m11 13.73-4 6.93"></path>
+                  <path d="M12 22v-2"></path><path d="M12 2v2"></path>
+                  <path d="M14 12h8"></path>
+                  <path d="m17 20.66-1-1.73"></path><path d="m17 3.34-1 1.73"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="m20.66 17-1.73-1"></path><path d="m20.66 7-1.73 1"></path>
+                  <path d="m3.34 17 1.73-1"></path><path d="m3.34 7 1.73 1"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <circle cx="12" cy="12" r="8"></circle>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_4_title">Industrial Automation</h3>
+              <p class="capability-desc" data-i18n="cap_4_desc">Automation workflows, control system integration and industrial monitoring architectures.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 05 PLC & Control -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">05</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 5H3"></path><path d="M12 19H3"></path>
+                  <path d="M14 3v4"></path><path d="M16 17v4"></path>
+                  <path d="M21 12h-9"></path><path d="M21 19h-5"></path><path d="M21 5h-7"></path>
+                  <path d="M8 10v4"></path><path d="M8 12H3"></path>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_5_title">PLC &amp; Control</h3>
+              <p class="capability-desc" data-i18n="cap_5_desc">PLC logic, sequencing, industrial controllers, interlocks and HMI integration.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 06 Energy & Electrical Monitoring -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">06</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 14 4-4"></path>
+                  <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_6_title">Energy &amp; Electrical Monitoring</h3>
+              <p class="capability-desc" data-i18n="cap_6_desc">Power metering, consumption analysis, electrical measurement and smart energy systems.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 07 Industrial Communication -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">07</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                  <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                  <path d="M12 12V8"></path>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_7_title">Industrial Communication</h3>
+              <p class="capability-desc" data-i18n="cap_7_desc">MQTT, Modbus RTU/TCP, RS-485, TCP/IP and gateway-level protocol translation.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+
+            <!-- 08 Software Integration -->
+            <div class="capability-card">
+              <span class="label-mono capability-num">08</span>
+              <div class="capability-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                  <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+              </div>
+              <h3 class="capability-title" data-i18n="cap_8_title">Software Integration</h3>
+              <p class="capability-desc" data-i18n="cap_8_desc">Backend services, dashboards, APIs, time-series storage and edge/cloud visualization.</p>
+              <span class="capability-hover-line"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 03: System Architecture -->
+      <section class="content-section section-bordered dot-bg">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">03</span>
+            <span class="label-mono" data-i18n="sec3_tag">System architecture</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n="sec3_heading">Signal path, end to end</h2>
+          <p class="section-lead" data-i18n="sec3_lead">Every project I take on lives somewhere on this chain — most of them span all of it.</p>
+
+          <div class="architecture-flow-wrapper">
+            <div class="flow-connecting-line" aria-hidden="true"></div>
+            <ol class="architecture-grid">
+              <!-- 01 -->
+              <li class="arch-item">
+                <div class="arch-card">
+                  <div class="arch-header">
+                    <span class="led-dot" style="animation-delay: 0s;"></span>
+                    <span class="label-mono">01</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_1_title">Physical world</h3>
+                  <p class="arch-desc" data-i18n="arch_1_desc">Temperature · Power · Flow</p>
+                </div>
+                <span class="arch-mobile-connector" aria-hidden="true"></span>
+              </li>
+
+              <!-- 02 -->
+              <li class="arch-item">
+                <div class="arch-card arch-card-primary">
+                  <div class="arch-header">
+                    <span class="led-dot" style="animation-delay: 0.35s;"></span>
+                    <span class="label-mono">02</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_2_title">Sensors</h3>
+                  <p class="arch-desc" data-i18n="arch_2_desc">PZEM · DHT · CT clamp</p>
+                </div>
+                <span class="arch-mobile-connector" aria-hidden="true"></span>
+              </li>
+
+              <!-- 03 -->
+              <li class="arch-item">
+                <div class="arch-card arch-card-primary">
+                  <div class="arch-header">
+                    <span class="led-dot" style="animation-delay: 0.7s;"></span>
+                    <span class="label-mono">03</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_3_title">MCU / PLC</h3>
+                  <p class="arch-desc" data-i18n="arch_3_desc">ESP32 · Ladder logic</p>
+                </div>
+                <span class="arch-mobile-connector" aria-hidden="true"></span>
+              </li>
+
+              <!-- 04 -->
+              <li class="arch-item">
+                <div class="arch-card arch-card-signal">
+                  <div class="arch-header">
+                    <span class="led-dot led-signal" style="animation-delay: 1.05s;"></span>
+                    <span class="label-mono">04</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_4_title">Edge / IIoT</h3>
+                  <p class="arch-desc" data-i18n="arch_4_desc">MQTT broker · Node-RED</p>
+                </div>
+                <span class="arch-mobile-connector" aria-hidden="true"></span>
+              </li>
+
+              <!-- 05 -->
+              <li class="arch-item">
+                <div class="arch-card arch-card-signal">
+                  <div class="arch-header">
+                    <span class="led-dot led-signal" style="animation-delay: 1.4s;"></span>
+                    <span class="label-mono">05</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_5_title">BMS / Cloud</h3>
+                  <p class="arch-desc" data-i18n="arch_5_desc">PostgreSQL · Time series</p>
+                </div>
+                <span class="arch-mobile-connector" aria-hidden="true"></span>
+              </li>
+
+              <!-- 06 -->
+              <li class="arch-item">
+                <div class="arch-card arch-card-primary">
+                  <div class="arch-header">
+                    <span class="led-dot" style="animation-delay: 1.75s;"></span>
+                    <span class="label-mono">06</span>
+                  </div>
+                  <h3 class="arch-title" data-i18n="arch_6_title">Dashboard</h3>
+                  <p class="arch-desc" data-i18n="arch_6_desc">Operators · Decisions</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 04: Selected Projects -->
+      <section id="work" class="content-section section-bordered">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">04</span>
+            <span class="label-mono" data-i18n="sec4_tag">Selected projects</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n="sec4_heading">Things I've built</h2>
+          <p class="section-lead" data-i18n="sec4_lead">Mini case studies — the engineering problem, the hardware, and where it runs today.</p>
+
+          <div class="projects-list">
+            <!-- Project 01 -->
+            <article class="project-card group">
+              <span class="grid-bg project-card-hover-bg" aria-hidden="true"></span>
+              <div class="project-layout">
+                <!-- Left Info -->
+                <div class="project-info">
+                  <div class="project-header-meta">
+                    <span class="label-mono text-primary">01</span>
+                    <span class="status-pill">
+                      <span class="led-dot"></span>
+                      <span class="label-mono status-pill-text" data-i18n="status_active">ACTIVE</span>
+                    </span>
+                  </div>
+                  
+                  <h3 class="project-title" data-i18n="proj_1_title">Smart Energy Monitoring System</h3>
+                  <p class="project-summary" data-i18n="proj_1_desc">
+                    Real-time electrical energy monitoring that collects power telemetry from equipment feeders and streams measurements to an edge/cloud platform for consumption analysis and anomaly alerts.
+                  </p>
+
+                  <a href="#contact" class="project-case-link">
+                    <span data-i18n="link_case_study">Case study</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Right Details -->
+                <div class="project-details">
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_domain">Domain</p>
+                    <p class="detail-value text-primary" data-i18n="proj_1_domain">Energy Management</p>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_stack">Stack</p>
+                    <ul class="tech-pill-list">
+                      <li class="tech-pill">ESP32</li>
+                      <li class="tech-pill">PZEM</li>
+                      <li class="tech-pill">MQTT</li>
+                      <li class="tech-pill">Node-RED</li>
+                      <li class="tech-pill">PostgreSQL</li>
+                    </ul>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_telemetry">Telemetry</p>
+                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true" class="telemetry-chart">
+                      <polyline points="0,30.7 9.09,25.3 18.18,28.4 27.27,19.9 36.36,23 45.45,14.5 54.54,17.5 63.63,11.4 72.72,16.0 81.81,9.0 90.9,12.9 100,6" fill="none" stroke-width="1.2" vector-effect="non-scaling-stroke" class="telemetry-line"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project-card group">
+              <span class="grid-bg project-card-hover-bg" aria-hidden="true"></span>
+              <div class="project-layout">
+                <!-- Left Info -->
+                <div class="project-info">
+                  <div class="project-header-meta">
+                    <span class="label-mono text-primary">02</span>
+                    <span class="status-pill">
+                      <span class="led-dot"></span>
+                      <span class="label-mono status-pill-text" data-i18n="status_prototype">PROTOTYPE</span>
+                    </span>
+                  </div>
+                  
+                  <h3 class="project-title" data-i18n="proj_2_title">Smart Building Automation</h3>
+                  <p class="project-summary" data-i18n="proj_2_desc">
+                    Building automation prototype monitoring environmental conditions and controlling connected equipment through a centralized control architecture with scheduled and setpoint-driven logic.
+                  </p>
+
+                  <a href="#contact" class="project-case-link">
+                    <span data-i18n="link_case_study">Case study</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Right Details -->
+                <div class="project-details">
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_domain">Domain</p>
+                    <p class="detail-value text-primary" data-i18n="proj_2_domain">BACS / BMS</p>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_stack">Stack</p>
+                    <ul class="tech-pill-list">
+                      <li class="tech-pill">ESP32</li>
+                      <li class="tech-pill">Sensors</li>
+                      <li class="tech-pill">MQTT</li>
+                      <li class="tech-pill">PLC</li>
+                      <li class="tech-pill">Dashboard</li>
+                    </ul>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_telemetry">Telemetry</p>
+                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true" class="telemetry-chart">
+                      <polyline points="0,13.4 9.09,15.5 18.18,11.3 27.27,14.5 36.36,8.1 45.45,12.3 54.54,9.1 63.63,13.4 72.72,6 81.81,10.2 90.9,7.0 100,11.3" fill="none" stroke-width="1.2" vector-effect="non-scaling-stroke" class="telemetry-line"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project-card group">
+              <span class="grid-bg project-card-hover-bg" aria-hidden="true"></span>
+              <div class="project-layout">
+                <!-- Left Info -->
+                <div class="project-info">
+                  <div class="project-header-meta">
+                    <span class="label-mono text-primary">03</span>
+                    <span class="status-pill">
+                      <span class="led-dot"></span>
+                      <span class="label-mono status-pill-text" data-i18n="status_dev">DEVELOPMENT</span>
+                    </span>
+                  </div>
+                  
+                  <h3 class="project-title" data-i18n="proj_3_title">Industrial IoT Gateway</h3>
+                  <p class="project-summary" data-i18n="proj_3_desc">
+                    Protocol-translating gateway that polls Modbus RTU field devices over RS-485, buffers readings locally, and publishes normalized telemetry upstream over MQTT with store-and-forward on link loss.
+                  </p>
+
+                  <a href="#contact" class="project-case-link">
+                    <span data-i18n="link_case_study">Case study</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Right Details -->
+                <div class="project-details">
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_domain">Domain</p>
+                    <p class="detail-value text-primary" data-i18n="proj_3_domain">IIoT</p>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_stack">Stack</p>
+                    <ul class="tech-pill-list">
+                      <li class="tech-pill">ESP32</li>
+                      <li class="tech-pill">Modbus</li>
+                      <li class="tech-pill">MQTT</li>
+                      <li class="tech-pill">Edge Computing</li>
+                    </ul>
+                  </div>
+
+                  <div class="detail-block">
+                    <p class="label-mono" data-i18n="lbl_telemetry">Telemetry</p>
+                    <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true" class="telemetry-chart">
+                      <polyline points="0,32.7 9.09,26.2 18.18,31.0 27.27,21.3 36.36,25.4 45.45,16.5 54.54,23.8 63.63,12.4 72.72,19.7 81.81,10.8 90.9,15.7 100,6" fill="none" stroke-width="1.2" vector-effect="non-scaling-stroke" class="telemetry-line"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 05: Toolbox -->
+      <section class="content-section section-bordered">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">05</span>
+            <span class="label-mono" data-i18n="sec5_tag">Toolbox</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n="sec5_heading">Technology I work with</h2>
+
+          <div class="toolbox-grid">
+            <!-- Hardware -->
+            <div class="toolbox-card">
+              <h3 class="toolbox-category-title" data-i18n="cat_hardware">Hardware</h3>
+              <ul class="toolbox-items-list">
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>ESP32</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Arduino</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span><span data-i18n="item_sensors">Sensors</span></li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span><span data-i18n="item_actuators">Actuators</span></li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>PZEM</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Relay</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>RS-485</li>
+              </ul>
+            </div>
+
+            <!-- Automation -->
+            <div class="toolbox-card">
+              <h3 class="toolbox-category-title" data-i18n="cat_automation">Automation</h3>
+              <ul class="toolbox-items-list">
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>PLC</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>HMI</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>BACS</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>BMS</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span><span data-i18n="item_control_sys">Control Systems</span></li>
+              </ul>
+            </div>
+
+            <!-- Communication -->
+            <div class="toolbox-card">
+              <h3 class="toolbox-category-title" data-i18n="cat_communication">Communication</h3>
+              <ul class="toolbox-items-list">
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>MQTT</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Modbus</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>TCP/IP</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>HTTP</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>WebSocket</li>
+              </ul>
+            </div>
+
+            <!-- Software -->
+            <div class="toolbox-card">
+              <h3 class="toolbox-category-title" data-i18n="cat_software">Software</h3>
+              <ul class="toolbox-items-list">
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Node.js</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Python</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>PostgreSQL</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Node-RED</li>
+                <li class="toolbox-item"><span class="toolbox-bullet" aria-hidden="true"></span>Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 06: Philosophy -->
+      <section class="content-section section-bordered">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">06</span>
+            <span class="label-mono" data-i18n="sec6_tag">Philosophy</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n="sec6_heading">From signal to system.</h2>
+          <p class="section-lead" data-i18n="sec6_lead">I enjoy building systems where hardware, software, networks and physical processes work together as one system.</p>
+
+          <ol class="philosophy-grid">
+            <li class="philosophy-card">
+              <span class="label-mono text-primary">01</span>
+              <h3 class="philosophy-title" data-i18n="phil_1_title">Measure</h3>
+              <p class="philosophy-desc" data-i18n="phil_1_desc">Understand the physical system through reliable, well-calibrated data.</p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="label-mono text-primary">02</span>
+              <h3 class="philosophy-title" data-i18n="phil_2_title">Connect</h3>
+              <p class="philosophy-desc" data-i18n="phil_2_desc">Link devices, controllers and platforms through robust communication.</p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="label-mono text-primary">03</span>
+              <h3 class="philosophy-title" data-i18n="phil_3_title">Automate</h3>
+              <p class="philosophy-desc" data-i18n="phil_3_desc">Turn data and control logic into useful, safe physical action.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Section 07: Contact -->
+      <section id="contact" class="content-section section-bordered grid-bg">
+        <div class="container">
+          <div class="section-tag">
+            <span class="label-mono text-primary">07</span>
+            <span class="label-mono" data-i18n="sec7_tag">Contact</span>
+          </div>
+
+          <h2 class="section-heading" data-i18n-html="sec7_heading">
+            Have a system worth <span class="text-primary">building</span>?
+          </h2>
+
+          <p class="section-lead" data-i18n="sec7_lead">
+            I'm interested in embedded systems, industrial automation, smart buildings, IIoT, and engineering projects that connect hardware with software.
+          </p>
+
+          <div class="contact-actions-group">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span data-i18n="btn_github">View GitHub</span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span data-i18n="btn_linkedin">LinkedIn</span>
+            </a>
+
+            <a href="mailto:contact@example.com" class="btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+              <span data-i18n="btn_email">Email Me</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p class="label-mono footer-copy" data-i18n="footer_copy">Electrical &amp; automation engineering portfolio</p>
+        <p class="label-mono footer-status">
+          <span class="led-dot"></span>
+          <span data-i18n="footer_status">All systems nominal</span>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
